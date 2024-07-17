@@ -53,17 +53,17 @@ Esses comandos são suficientes para instalar o `Inkscape` no `Ubuntu` via `Term
 
 Para configurar/instalar/usar o `inkscape` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
 
-1. Abra o `Terminal Emulator. Você pode fazer isso pressionando: `Ctrl + Alt + T`
+1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 
 2. Digite o seguinte comando e pressione `Enter`:
 
     ```
     sudo apt clean
     sudo apt autoclean
-    sudo apt autoremove
-    sudo apt update -y
-    sudo apt autoremove
-    sudo apt autoclean
+    sudo apt autoremove -y
+    sudo apt update
+    sudo apt --fix-broken install
+    sudo apt clean
     sudo apt list --upgradable
     sudo apt full-upgrade -y
     sudo apt install inkscape -y
